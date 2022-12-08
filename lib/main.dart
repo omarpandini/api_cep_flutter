@@ -100,6 +100,7 @@ class _BodyState extends State<Body> {
             case ConnectionState.done:
               if (snapshot.hasError) {
                 print('Gerou erro');
+                _nomeBotao = 'Enviar';
                 break;
               }
               _nomeBotao = 'Enviar';
